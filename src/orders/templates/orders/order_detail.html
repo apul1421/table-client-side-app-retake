@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1> Thank You for shopping </h1>
+{% include "orders/order_summary_short.html" with order=order %}
+
+{% endblock %}

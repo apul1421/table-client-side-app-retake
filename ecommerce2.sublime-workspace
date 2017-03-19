@@ -1,0 +1,280 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"var",
+				"variation_select"
+			],
+			[
+				"va",
+				"variation_select"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"p",
+				"price"
+			],
+			[
+				"produ",
+				"product"
+			],
+			[
+				"P",
+				"Product"
+			],
+			[
+				"pr",
+				"product"
+			],
+			[
+				"se",
+				"sender"
+			],
+			[
+				"Pr",
+				"ProductManager"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"up",
+				"update_qty"
+			],
+			[
+				"i",
+				"item"
+			],
+			[
+				"ca",
+				"cart_item"
+			],
+			[
+				"re",
+				"remove"
+			],
+			[
+				"car",
+				"cart_item"
+			],
+			[
+				"Car",
+				"CartItem"
+			],
+			[
+				"s",
+				"session"
+			],
+			[
+				"n",
+				"new_cart"
+			],
+			[
+				"C",
+				"CartAdmin"
+			],
+			[
+				"o",
+				"out"
+			],
+			[
+				"inc",
+				"inc	#include <…>"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/apulgupta/Desktop/table1.2/table1_2/templates/cart/view.html",
+		"/Users/apulgupta/Desktop/table1.2/table1_2/table1_2/urls.py",
+		"/Users/apulgupta/Desktop/table1.2/table1_2/carts/views.py",
+		"/Users/apulgupta/Desktop/table1.2/table1_2/carts/admin.py",
+		"/Users/apulgupta/Desktop/table1.2/table1_2/table1_2/settings.py",
+		"/Users/apulgupta/Desktop/table1.2/table1_2/products/views.py",
+		"/Users/apulgupta/Desktop/table1.2/table1_2/templates/products/home.html",
+		"/Users/apulgupta/Desktop/table1.2/table1_2/templates/products/all.html",
+		"/Users/apulgupta/Desktop/table1.2/table1_2/carts/models.py",
+		"/Users/apulgupta/Desktop/table1.2/table1_2/products/models.py",
+		"/Users/apulgupta/Desktop/tablev1.0/src/profiles/templates/base.html",
+		"/Users/apulgupta/Desktop/tablev1.0/src/profiles/templates/untitled",
+		"/Users/apulgupta/Desktop/tablev1.0/src/profiles/templates/home.html",
+		"/Users/apulgupta/Desktop/tablev1.0/src/tablev1_0/settings.py",
+		"/Users/apulgupta/Desktop/tablev1.0/static/static/css/main.css",
+		"/Users/apulgupta/Desktop/tablev1.0/src/profiles/views.py",
+		"/Users/apulgupta/Desktop/tablev1.0/src/tablev1_0/urls.py",
+		"/Users/apulgupta/Desktop/tablev1.0/src/profiles/models.py",
+		"/Users/apulgupta/Desktop/tablev1.0/src/profiles/admin.py",
+		"/Users/apulgupta/Downloads/ideone_u7ZNZV.c",
+		"/Users/apulgupta/Documents/Linked List(Insert).cpp"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"')",
+			");",
+			"bootstrap.min.css'"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ecommerce2.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

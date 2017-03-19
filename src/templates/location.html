@@ -1,0 +1,121 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Project Cover">
+    <meta name="author" content="Shubham Mehta">
+    <link rel="icon" href="{% static 'favicon.ico' %}">
+
+    <title>Table!</title>
+
+    <!-- Bootstrap core CSS -->
+     <link href="{% static 'css/bootstrap.min1.css' %}" rel="stylesheet">
+   <!-- <link href="styles/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+     <link href="{% static 'css/cover.css' %}" rel="stylesheet">
+    <!-- <link href="styles/cover.css" rel="stylesheet"> -->
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Table</h3>
+              <nav class="nav nav-masthead">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Contact</a>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Welcome to the <strong>Table!</strong></h1>
+            <p class="lead"><strong>Table</strong> is an on-the-cloud digital solution to your restaurant ordering! To get started, click on the button below to allow us to guess your restaurant.</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-secondary" onclick="getLocation()">Share Location</a>
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>
+              	Made with <img src="{% static 'img/glyphicons-heart-empty.png' %}">
+              	<br>
+              	By <a href="https://www.linkedin.com/in/shubham-mehta-b15a54a0/">Shubham Mehta</a> on <a href="https://getbootstrap.com">Bootstrap</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="{% static 'js/jquery-3.1.1.min.js' %}"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="{% static 'js/bootstrap.min1.js' %}"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{% static 'js/ie10-viewport-bug-workaround1.js' %}"></script>
+
+    <!-- Page JS -->
+    <script>
+		/*var home_shubham_latitude = 28.596993042804655;
+		var home_shubham_longitude = 77.05163812401724;
+		*/
+		function getLocation()
+		{
+		    if(navigator.geolocation)
+		    {
+		    	navigator.geolocation.getCurrentPosition(showPosition,showError);
+		    }
+		    else
+		    {
+		    	alert("Geolocation is not supported by this browser.");
+		    }
+	    }
+	    function showError(error)
+	    {
+	    	switch(error.code)
+	        {
+		        case error.PERMISSION_DENIED:
+		          alert("User denied the request for Geolocation.")
+		          break;
+		        case error.POSITION_UNAVAILABLE:
+		          alert("Location information is unavailable.")
+		          break;
+		        case error.TIMEOUT:
+		          alert("The request to get user location timed out.")
+		          break;
+		        case error.UNKNOWN_ERROR:
+		          alert("An unknown error occurred.")
+		          break;
+	        }
+	    }
+	    function showPosition(pos)
+		  {
+        if (pos.coords.longitude >= 77.051 && pos.coords.longitude <= 77.052 && pos.coords.latitude >= 28.596 && pos.coords.latitude <= 28.598)
+      	{
+          window.location = "{% url 'products' %}";
+      	}
+      	else
+      	{
+          window.location = "{% url 'products' %}";
+      	}
+		  }
+	</script>
+  </body>
+</html>
