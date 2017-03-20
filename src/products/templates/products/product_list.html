@@ -80,11 +80,12 @@ $("#submit-btn").click(function(event){
 	{% if object.variation_set.count > 1 %}
  		<h4 id='price' style="text-align: center; display: block;">₹&nbsp;{{ object.variation_set.first.price }}</h4>
  		
-        <select name= 'item' class='form-control variation_select'>
+        <select name= 'item' class='form-control variation_select' style="margin: 0 auto; width: 30%; display: block;">
         		{% for vari_obj in object.variation_set.all %}
-					<option style="display: inline-block;" data-sale-price="{{vari_obj.sale_price}}" data-price="{{ vari_obj.price }}" value="{{ vari_obj.id }}">{{ vari_obj }}</option>
+					<option data-sale-price="{{vari_obj.sale_price}}" data-price="{{ vari_obj.price }}" value="{{ vari_obj.id }}">{{ vari_obj }}</option>
 				{% endfor %}
 				</select>
+		<br>
 
 
 		{% else %}
