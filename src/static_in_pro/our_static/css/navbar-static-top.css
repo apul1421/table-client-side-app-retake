@@ -21,9 +21,6 @@ body {
   text-decoration: underline;
 }
 
-.navbar-default .navbar-toggle {
- border-color: transparent !important;
-}
 
 .navbar-toggle {
 	background-color: #292B2C !important;
