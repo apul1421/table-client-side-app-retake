@@ -75,10 +75,10 @@ $("#submit-btn").click(function(event){
         <form id='add-form' method='GET' action="{% url 'cart' %}">
         <p id='jquery-message' class='lead'></p>
 
-        ₹&nbsp;
+		<h4 style="display: inline">₹&nbsp;</h4>
 		
 	{% if object.variation_set.count > 1 %}
- 		<h4 id='price' style="text-align: center;">{{ object.variation_set.first.price }}</h4>
+ 		<h4 id='price' style="text-align: center; display: inline;">{{ object.variation_set.first.price }}</h4>
  		
         <select name= 'item' class='form-control variation_select'>
         		{% for vari_obj in object.variation_set.all %}
