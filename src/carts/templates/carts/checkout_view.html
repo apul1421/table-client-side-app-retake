@@ -3,23 +3,6 @@
 {% load crispy_forms_tags %}
 
 
-<script>
-{% block jquery %}
-
-var clientToken = "{{ client_token }}";
-
-braintree.setup(clientToken, "dropin", {
-  container: "payment-form"
-});
-
-
-
-
-
-{% endblock %}
-
-</script>
-
 {% block content %}
 
 
@@ -80,6 +63,22 @@ braintree.setup(clientToken, "dropin", {
 
 {% endblock %}
 
+
+<script>
+{% block jquery %}
+
+var clientToken = "{{ client_token }}";
+
+braintree.setup(clientToken, "dropin", {
+  container: "payment-form"
+});
+
+
 $(document).ready(function(){
     $("#order_submission_button").prop("disabled", false);
 });
+
+
+{% endblock %}
+
+</script>
