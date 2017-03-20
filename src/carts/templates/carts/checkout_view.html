@@ -52,7 +52,7 @@
 <form id="checkout" method="POST" action="{% url 'checkout_final' %}">{% csrf_token %}
 <!-- <input type="hidden" name="payment_token" value="ABC" /> -->
 <div id="payment-form"></div>
-<p><b><input type='submit' disabled="disabled" id="order_submission_button">Complete Order</b></p>
+  <p><b><button type='submit' id="order_submission_button" style="display: none;">Complete Order</button></b></p>
 </form>
 
 
@@ -75,7 +75,7 @@ braintree.setup(clientToken, "dropin", {
 
 
 $(document).ready(function(){
-    $("#order_submission_button").prop("disabled", false);
+    $("#order_submission_button").show();
 });
 
 
