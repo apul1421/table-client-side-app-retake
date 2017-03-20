@@ -18,16 +18,9 @@ function setPrice(){
 setPrice()
 
 $(".variation_select").change(function(){
-    var price = $(this).attr("data-price");
+    setPrice()
 
-    var sale_price = $(this).attr("data-sale-price");
-
-    if (sale_price != "" && sale_price != "None" && sale_price != null ) {
-        $("#price").html("<h4>" + sale_price + " <small class='og-price'>" + price + "</small></h4>");
-    } else {
-        $("#price").html(price);
-    }
-});
+})
 
 
 $("#submit-btn").click(function(event){
