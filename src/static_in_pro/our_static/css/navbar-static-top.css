@@ -25,10 +25,6 @@ body {
  border-color: transparent !important;
 }
 
-.navbar-toggle:hover {
-	background-color: #00B2FF !important;
-}
-
 .navbar-toggle {
-	background-color: #5ACDFF !important;
+	background-color: #292B2C !important;
 }
