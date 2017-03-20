@@ -95,7 +95,7 @@ $("#submit-btn").click(function(event){
 					<h4 id="price" style="text-align: center; display: inline-block;">{% if object.variation_set.first.sale_price %}
 
 					{{ object.variation_set.first.sale_price }}
-						<small style="text-align: center; display: inline-block" class="og-price">₹&nbsp;</small>
+						&nbsp;<small style="text-align: center; display: inline-block" class="og-price">₹</small>
 					<small class="og-price">{{ object.variation_set.first.price }}</small>
 
 					{% else %}
