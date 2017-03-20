@@ -4,12 +4,12 @@ body {
 
 .navbar-static-top {
   margin-bottom: 19px;
-  background-color: #5ACDFF;
+  background-color: #292B2C;
   border-color: #00B2FF;
 }
 
 .navbar-default .navbar-brand {
-  color: #000;
+  color: #fff;
   font-weight: 900; 
 }
 
