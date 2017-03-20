@@ -21,8 +21,13 @@ body {
   text-decoration: underline;
 }
 
-
 .navbar-toggle {
 	background-color: #292B2C !important;
 	border: 1px solid #3D3F40;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover
+{
+	color: white;
+	background-color: transparent;
 }
