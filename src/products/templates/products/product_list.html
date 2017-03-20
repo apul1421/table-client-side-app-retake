@@ -82,7 +82,7 @@ $("#submit-btn").click(function(event){
  		
         <select name= 'item' class='form-control variation_select'>
         		{% for vari_obj in object.variation_set.all %}
-					<option data-sale-price="{{vari_obj.sale_price}}" data-price="{{ vari_obj.price }}" value="{{ vari_obj.id }}">{{ vari_obj }}</option>
+					<option style="display: inline-block;" data-sale-price="{{vari_obj.sale_price}}" data-price="{{ vari_obj.price }}" value="{{ vari_obj.id }}">{{ vari_obj }}</option>
 				{% endfor %}
 				</select>
 
