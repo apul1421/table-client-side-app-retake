@@ -31,3 +31,8 @@ body {
 	color: white;
 	background-color: transparent;
 }
+
+.fa:hover, .fa:focus
+{
+	text-decoration: none !important;
+}
