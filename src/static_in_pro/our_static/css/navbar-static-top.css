@@ -1,5 +1,6 @@
 body {
   min-height: 1000px;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif !important;
 }
 
 .navbar-static-top {
@@ -14,11 +15,11 @@ body {
 }
 
 .navbar-default .navbar-brand:hover {
-  color: #777;
+  color: white;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  color: #000;
+  text-decoration: underline;
 }
 
 .navbar-default .navbar-toggle {
