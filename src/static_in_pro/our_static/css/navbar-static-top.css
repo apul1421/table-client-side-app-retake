@@ -17,9 +17,7 @@ body {
   color: white;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
-  text-decoration: underline;
-}
+
 
 .navbar-toggle {
 	background-color: #292B2C !important;
