@@ -6,7 +6,7 @@ body {
 .navbar-static-top {
   margin-bottom: 19px;
   background-color: #292B2C;
-  border-color: #696969;
+  border-color: #696969 !important;
 }
 
 .navbar-default .navbar-brand {
