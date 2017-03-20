@@ -34,6 +34,7 @@
       </div>
       <p>
         <br>
+        <a href='{% url "cart" %}' id="topmost_button_left" class="btn btn-primary topmost_button_left"><i class="fa fa-shopping-cart fa-navbar-cart" style="font-size: 1.7em;"></i> <span id="cart-count-badge" class="badge"> {{ request.session.cart_item_count}} </span> Proceed to Checkout</a>
         <a href='{% url "cart" %}'><i class="fa fa-shopping-cart fa-navbar-cart" style="font-size: 1.7em;"></i> <span id="cart-count-badge" class="badge"> {{ request.session.cart_item_count}} </span></a>
         &nbsp;<br class="gap"><br class="gap">
         <a href="#" id="topmost_button_right" class="btn btn-secondary"><img src="glyphicons/glyphicons-7-user-add.png">&nbsp; Sign In</a>
