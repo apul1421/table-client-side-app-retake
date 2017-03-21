@@ -9,9 +9,9 @@ jQuery(document).ready(function(){
           var price = $(".variation_select option:selected").attr("data-price");
           var sale_price = $(".variation_select option:selected").attr("data-sale-price");
           if (sale_price != "" && sale_price != "None" && sale_price != null ) {
-            $("#{{ object.id }}-price").html("<h4>" + "₹&nbsp;" + sale_price + " <small class='og-price'>" + "₹&nbsp;" + price + "</small></h4>");
+            $(" #'{{ object.id }}-price' ").html("<h4>" + "₹&nbsp;" + sale_price + " <small class='og-price'>" + "₹&nbsp;" + price + "</small></h4>");
           } else {
-            $("#{{ object.id }}-price").html("₹&nbsp;" + price);
+            $(" #'{{ object.id }}-price' ").html("₹&nbsp;" + price);
           }
         });
     });
