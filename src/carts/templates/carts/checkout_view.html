@@ -52,7 +52,7 @@
 <form id="checkout" method="POST" action="{% url 'checkout_final' %}">{% csrf_token %}
 <!-- <input type="hidden" name="payment_token" value="ABC" /> -->
 <div id="payment-form"></div>
-  <p><b><button type='submit' id="order_submission_button" style="display: none;">Complete Order</button></b></p>
+  <button type='submit' id="order_submission_button" style="display: none;" class="btn btn-primary">Complete Order</button>
 </form>
 
 
