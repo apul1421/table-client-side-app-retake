@@ -15,6 +15,30 @@ jQuery(document).ready(function(){
           }
         });
     });
+ 
+ jQuery(document).ready(function(){
+        jQuery(".variation_select").change(function(){
+          var price = $(".variation_select option:selected").attr("data-price");
+          var sale_price = $(".variation_select option:selected").attr("data-sale-price");
+          if (sale_price != "" && sale_price != "None" && sale_price != null ) {
+            $(" #2 ").html("<h4>" + "₹&nbsp;" + sale_price + " <small class='og-price'>" + "₹&nbsp;" + price + "</small></h4>");
+          } else {
+            $(" #2 ").html("₹&nbsp;" + price);
+          }
+        });
+    });
+ 
+ jQuery(document).ready(function(){
+        jQuery(".variation_select").change(function(){
+          var price = $(".variation_select option:selected").attr("data-price");
+          var sale_price = $(".variation_select option:selected").attr("data-sale-price");
+          if (sale_price != "" && sale_price != "None" && sale_price != null ) {
+            $(" #3 ").html("<h4>" + "₹&nbsp;" + sale_price + " <small class='og-price'>" + "₹&nbsp;" + price + "</small></h4>");
+          } else {
+            $(" #3 ").html("₹&nbsp;" + price);
+          }
+        });
+    });
 
 
 $("#submit-btn").click(function(event){
