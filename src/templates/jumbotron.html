@@ -1,0 +1,19 @@
+
+{% load staticfiles %}
+ {% include "javascript.html" %}
+ {% include 'head_css.html' %}
+
+
+ <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Menu</h1>
+        <p class="lead text-muted">Order from the wide variety of vegetarian, non-vegetarian pizzas, sides and drinks.</p>
+      </div>
+      <p>
+        <br>
+        <a href='{% url "cart" %}' id="topmost_button_left" class="btn btn-primary topmost_button_left"><img src="{% static 'img/glyphicons-540-cart-tick.png' %}">&nbsp;&nbsp;Proceed to Checkout</a>
+        &nbsp;<br class="gap"><br class="gap">
+        <button type="button" class="btn btn-default"><a href="#" id="topmost_button_right"><img src="{% static 'img/glyphicons-7-user-add.png' %}">&nbsp; Sign In</a></button>
+      </p>
+    </section>
+
