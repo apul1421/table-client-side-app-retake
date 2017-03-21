@@ -31,5 +31,5 @@ body {
 }
 
 input:focus { 
-    border: 1px solid #333;
+    border-color: #333;
 }
