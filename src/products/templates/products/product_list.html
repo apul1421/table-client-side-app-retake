@@ -9,9 +9,9 @@ jQuery(document).ready(function(){
           var price = $(".variation_select option:selected").attr("data-price");
           var sale_price = $(".variation_select option:selected").attr("data-sale-price");
           if (sale_price != "" && sale_price != "None" && sale_price != null ) {
-            $(" #(1-price) ").html("<h4>" + "₹&nbsp;" + sale_price + " <small class='og-price'>" + "₹&nbsp;" + price + "</small></h4>");
+            $(" #{{ object.id }} ").html("<h4>" + "₹&nbsp;" + sale_price + " <small class='og-price'>" + "₹&nbsp;" + price + "</small></h4>");
           } else {
-            $(" #(1-price) ").html("₹&nbsp;" + price);
+            $(" #{{ object.id }} ").html("₹&nbsp;" + price);
           }
         });
     });
@@ -71,7 +71,7 @@ $("#submit-btn").click(function(event){
 		
 		
 	{% if object.variation_set.count > 1 %}
- 		<h4 id='{{ object.id }}-price' style="text-align: center; display: block;">₹&nbsp;{{ object.variation_set.first.price }}</h4>
+ 		<h4 id='{{ object.id }}' style="text-align: center; display: block;">₹&nbsp;{{ object.variation_set.first.price }}</h4>
  		
         <select name= 'item' class='form-control variation_select' style="margin: 0 auto; width: 30%; display: block;">
         		{% for vari_obj in object.variation_set.all %}
@@ -86,7 +86,7 @@ $("#submit-btn").click(function(event){
 		
 		
 		<input type="hidden" name='item' value='{{ object.variation_set.first.id }}' />
-					<h4 id="{{ object.id }}-price" style="text-align: center; display: block;">₹&nbsp;{% if object.variation_set.first.sale_price %}
+					<h4 id="{{ object.id }}" style="text-align: center; display: block;">₹&nbsp;{% if object.variation_set.first.sale_price %}
 
 					{{ object.variation_set.first.sale_price }}
 						&nbsp;<small style="text-align: center; display: inline-block" class="og-price">₹</small>
