@@ -39,13 +39,13 @@
                 </tr>
               </thead>
               <tbody>
-                      {% for order in object_list %}
+              {% for order in object_list %}
                 <tr>
                   <td>{{ order.id }}</td>
                   <td>{{ order.cart.cartitem_set.count }}</td>
                   <td>{% for i in order.cart.cartitem_set.all %}<b>{{ i.item.get_title }}</b>  Qty : {{ i.quantity }}</td>
                 </tr>
-                      {% endfor %}
+              {% endfor %}
               </tbody>
             </table>
           </div>
