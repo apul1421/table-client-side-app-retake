@@ -66,10 +66,11 @@
         <br/>
         {% for i in order.cart.cartitem_set.all %}<b>{{ i.item.get_title }}</b>  Qty : {{ i.quantity }}
         <br/>
+              {% endfor %}
       </td>
     </tr>
 </table>
 </li>
-{% endfor %}
+
 
 {% endblock %}
