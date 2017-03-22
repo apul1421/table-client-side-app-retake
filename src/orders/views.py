@@ -45,7 +45,6 @@ class OrderList(LoginRequiredMixin, ListView):
 class ChefList(ListView):
 	model = Order
 	queryset = Order.objects.filter(status ='completed')
-	queryset = Order.objects.all
 	template_name = 'orders/chef_list.html'
 
 	
