@@ -35,8 +35,7 @@
                 <tr>
                   <th>Order No.</th>
                   <th>Items</th>
-                  <th>Details</th>
-                  <th>Quantity</th>
+                   <th>Details</th>
                 </tr>
               </thead>
               <tbody>
@@ -44,8 +43,7 @@
                 <tr>
                   <td>{{ order.id }}</td>
                   <td>{{ order.cart.cartitem_set.count }}</td>
-                  <td>{% for i in order.cart.cartitem_set.all %}<b>{{ i.item.get_title }}</td>
-                  <td>{{ i.quantity }}</td>
+                  <td>{% for i in order.cart.cartitem_set.all %}<b>{{ i.item.get_title }}</b>  Qty : {{ i.quantity }}</td>
                 </tr>
                       {% endfor %}
               </tbody>
