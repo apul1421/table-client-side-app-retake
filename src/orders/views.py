@@ -46,5 +46,3 @@ class ChefList(ListView):
 	model = Order
 	queryset = Order.objects.filter(status ='completed')
 	template_name = 'orders/chef_list.html'
-
-	
