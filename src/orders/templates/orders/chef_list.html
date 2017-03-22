@@ -5,8 +5,8 @@
         <div class="">
           <h1 class="page-header">Dashboard</h1>
 
-          <div class="row placeholders" data-toggle="modal" data-target="#Modal1" style="cursor: pointer;">
-            <div class="col-xs-6 col-sm-3 placeholder">
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder" data-toggle="modal" data-target="#Modal1" style="cursor: pointer;">
               <img src="/media/products/veg_extravaganza.png" width="200" height="200" class="img-responsive" alt="Veg Extravaganza">
               <h4>Veg Extravaganza</h4>
               <span class="text-muted">x2</span>
@@ -29,7 +29,7 @@
           </div>
                 
                 
-          <div id="Modal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Veg Extravaganza">
+   <div id="Modal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Veg Extravaganza">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -39,37 +39,9 @@
             </button>
           </div>
           <div class="modal-body">
-            <p>
-              <div class="custom-modal-content">
-                <strong>Crust</strong>: Classic Hand Tossed
-              </div>
-              <div class="custom-modal-content">
-                <strong>Size</strong>:&nbsp;&nbsp;
-                <div class="btn-group" data-toggle="buttons">
-                  <label class="btn btn-primary active" onclick="changePrice1('230');">
-                    <input type="radio" name="options" id="option1" checked autocomplete="off"> Small
-                  </label>
-                  <label class="btn btn-primary" onclick="changePrice1('440');">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Medium
-                  </label>
-                  <label class="btn btn-primary" onclick="changePrice1('655');">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> Large
-                  </label>
-                </div>
-              </div>
-              <div class="custom-modal-content">
-                <strong>Unit Price</strong>: &#8377; <span id="price1">230</span>
-              </div>
-              <div class="custom-modal-content">
-                <strong>Quantity</strong>:
-                <button type="button" class="btn btn-outline-secondary" style="color: black; cursor: pointer;" onclick="increaseQuantity('quantityNo1');">+</button>
-                <input id="quantityNo1" class="form-control" type="text" value="1" style="width: 15%; display: inline-block; position: relative; top: 1px;">
-                <button type="button" class="btn btn-outline-secondary" style="color: black; cursor: pointer;" onclick="decreaseQuantity('quantityNo1');">-</button>
-              </div>
-            </p>
+            
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary"><img src="glyphicons/glyphicons-209-cart-in.png">&nbsp; Add to Cart</button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
