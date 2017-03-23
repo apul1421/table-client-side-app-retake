@@ -29,9 +29,11 @@
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand" style="text-align: center; display: block; float: none;">Table</h3>
+              <h3 class="masthead-brand">Table</h3>
               <nav class="nav nav-masthead">
-                <!--<a class="nav-link active" href="#">Home</a>-->
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Contact</a>
               </nav>
             </div>
           </div>
@@ -40,7 +42,7 @@
             <h1 class="cover-heading">Welcome to the <strong>Table!</strong></h1>
             <p class="lead"><strong>Table</strong> is an on-the-cloud digital solution to your restaurant ordering! To get started, click on the button below to allow us to guess your restaurant.</p>
             <p class="lead">
-              <a href="#" class="btn btn-lg btn-secondary" onclick="getLocation()">Share Location</a>
+              <a href="#" class="btn btn-lg btn-secondary" onclick="location.href='{% url 'products' %}';"">Share Location</a>
             </p>
           </div>
 
@@ -74,7 +76,7 @@
 		/*var home_shubham_latitude = 28.596993042804655;
 		var home_shubham_longitude = 77.05163812401724;
 		*/
-		function getLocation()
+		/*function getLocation()
 		{
 		    if(navigator.geolocation)
 		    {
@@ -113,7 +115,7 @@
       	{
           window.location = "{% url 'products' %}";
       	}
-		  }
+		  }*/
 	</script>
   </body>
 </html>
