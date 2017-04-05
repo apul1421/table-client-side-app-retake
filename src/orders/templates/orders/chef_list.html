@@ -126,8 +126,32 @@
                 <tr>
                   <td>{{ order.id }}</td>
                   <td>{{ order.cart.cartitem_set.count }}</td>
-                  <td>{% for i in order.cart.cartitem_set.all %}<b>{{ i.item.get_title }}</b>  Qty : {{ i.quantity }} {% endfor %}</td>
-                      
+                  <td>{% for i in order.cart.cartitem_set.all %}<b>{{ i.item.get_title }}</b>  Qty : {{ i.quantity }}    
+                  {% endfor %}
+
+                   <form method="POST" action="http://formspree.io/{{order.user}}">
+  <input type="email" name="email" placeholder="{{order.user}}">
+  <div class=col-sm-2>
+  <select name="message" class="form-control">
+     <option value="Thankyou For Ordering with table your order has been recieved by our chef and you will be getting your order soon 
+     Regards
+     Team Table">Recieved</option>
+    <option value="Your order will take 5 min">5 min</option>
+    <option value="Your order will take 10 min">10 min</option>
+    <option value="Your order will take 15 min">15 min</option>
+    <option value="Your order will take 20 min">20 min</option>
+     <option value="Your order has been prepared
+     Regards
+     Team Table">Completed</option>
+  </select>
+  </div>
+  <button type="submit" class="btn btn-primary" >Send</button>
+</form>   
+
+
+                </td>
+
+
                 </tr>
               {% endfor %}
               </tbody>
