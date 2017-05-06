@@ -19,7 +19,7 @@ This is a web application optimised to run on mobile browser, As soon as a custo
 
 There is a perfect way of doing it [link](https://virtualenv.pypa.io/en/stable/)
 
-4. Install all the packages in the file [requirement.txt](https://github.com/apul1421/table-client-side-app-retake/blob/master/requirements.txt)
+4. Install all the packages in the file [requirements.txt](https://github.com/apul1421/table-client-side-app-retake/blob/master/requirements.txt)
 
 ``` pip install -r requirements.txt ``` 
 
